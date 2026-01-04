@@ -1,20 +1,16 @@
-# cloud_computing_submission
+A personal learning project demonstrating core AWS cloud concepts using EC2, S3, and CloudWatch. The project focuses on deploying a simple web application backend, hosting a frontend on S3, monitoring API usage with CloudWatch, and staying within AWS Free Tier limits.
 
-Project done by:
+# Project Overview
 
-- Pavithra Purushothaman - MatrikelNummer: 1535949  
-- Logeshwari Purushothaman - MatrikelNummer: 1536313
+This project simulates a simple cloud-hosted web application and focuses on practical AWS usage rather than production-level scaling.
 
------
+## Key Implementations
 
-We currently have a web app we created in our GDSD class, so we tried to deploy that application in AWS.
-
-## What we did in this project:
-1. We already had an EC2 instance running, but we terminated it and created a new one (count = 1) to stay within the free tier.
-2. While running the EC2 instance, we added a step to automatically start our web app’s backend.
-3. We used our existing S3 bucket to host the frontend part of the web app for testing.
-4. In the web app, we used `boto3` to upload images from the frontend to S3 and store paths in the database.
-5. We set up CloudWatch to monitor how many API requests hit our backend and created an alarm if more than 100 requests happen in 5 minutes so we can be aware and stay within the free tier's 1786 requests in our app.
+1. I already had an EC2 instance running, but I terminated it and created a new one (count = 1) to stay within the free tier.
+2. While running the EC2 instance, I added a step to automatically start the web app’s backend.
+3. I used the existing S3 bucket to host the frontend part of the web app for testing.
+4. In the web app, I used `boto3` to upload images from the frontend to S3 and store paths in the database.
+5. I set up CloudWatch to monitor how many API requests hit the backend and created an alarm if more than 100 requests happen in 5 minutes so I can be aware and stay within the free tier's 1786 requests in the app.
 6. To see logs and alarms then go to AWS CloudWatch: Logs -> Log Groups -> /team4/app_logs.
 
 ---
