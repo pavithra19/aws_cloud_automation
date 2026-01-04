@@ -31,3 +31,6 @@ This project simulates a simple cloud-hosted web application and focuses on prac
     terraform import aws_instance.app_server i-08f8de8988d5f1018 # old instance's id.
     terraform plan
     terraform apply
+
+## Contributors
+[Logeshwari Purushothaman](https://github.com/Logeshwari-Purushothaman)
